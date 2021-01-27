@@ -193,7 +193,7 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Traditionally, deep learning has looked at data as a cloud of isolated points. Take for example ImageNet, a large dataset of 14 million images of everything from oranges and strawberries to people and street signs (important caveat: although ImageNet has transformed the field, it may be very <a href="https://excavating.ai/">biased</a>). Each image is its own island with no relation to any other image, apart from the fact that they may contain the same kind of fruit, or the same traffic sign.
+<p>Traditionally, deep learning has looked at data as a cloud of isolated points. Take for example ImageNet, a large dataset of 14 million images of everything from oranges and strawberries to people and street signs (important caveat: although ImageNet has transformed the field, it may be very <a href="https://excavating.ai/">biased</a>). Each image is its own island with no relation to any other image, apart from the fact that two images may contain the same kind of fruit, or the same traffic sign.
 What if we allow our data points to "relate" to each other in interesting ways, and turn a cloud of isolated points into a complex network?</p>
 
 </div>
@@ -261,7 +261,7 @@ With the popularity of social networking sites like Facebook, we have huge socia
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://paulbutler.org/posts/2010/visualizing-facebook-friends/facebook_map.png" alt=""><br>
+<p><img src="/tailrecursion/images/copied_from_nb/gnn_resources/1/facebook.png" alt=""><br>
 A visualization of facebook's social network by Paul Butler. See <a href="https://paulbutler.org/2010/visualizing-facebook-friends/">this post</a> for more details on how it was generated.</p>
 
 </div>
@@ -279,7 +279,7 @@ A visualization of facebook's social network by Paul Butler. See <a href="https:
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><em>Here, the nodes are patents and papers (representing discoveries, inventions, etc) and authors, and the edges indicate who authored or invented an idea.</em><br>
+<p><em>Here, the nodes are patents, papers (representing discoveries, inventions, etc) and authors, and the edges indicate who authored or invented an idea.</em><br>
 If you're interested in how science works and how ideas mutate and spread from one discipline to another, a citation network is a natural thing to explore.</p>
 
 </div>
@@ -288,7 +288,7 @@ If you're interested in how science works and how ideas mutate and spread from o
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://i1.wp.com/scottbot.net/wp-content/uploads/2013/06/citation_network1.png?resize=768%2C702&amp;ssl=1" alt=""><br>
+<p><img src="/tailrecursion/images/copied_from_nb/gnn_resources/1/citation.webp" alt=""><br>
 Visualization of a citation network by <a href="https://nealcaren.org/#about">Neal Caren</a></p>
 
 </div>
@@ -307,7 +307,7 @@ Visualization of a citation network by <a href="https://nealcaren.org/#about">Ne
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><em>Here, the nodes are people, companies, etc and the edges represent transactions and exchanges</em><br>
-Recognizing that the economy is a complex system, economists are increasingly trying to model and simulate the economy.</p>
+Recognizing that the economy is a complex system, economists are increasingly trying to computationally model and simulate the economy, rather than writing down differential equations.</p>
 
 </div>
 </div>
@@ -315,7 +315,7 @@ Recognizing that the economy is a complex system, economists are increasingly tr
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/b/b9/TheProductSpace.png" alt=""><br>
+<p><img src="/tailrecursion/images/copied_from_nb/gnn_resources/1/economy.png" alt=""><br>
 Product Space, representing the proximity between products traded in the global market.</p>
 
 </div>
@@ -342,7 +342,7 @@ The human brain is a complex physical network with more than 86 billion neurons 
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://i.pinimg.com/originals/fd/41/81/fd4181d3dbd322707548d93931bb23a3.jpg" alt=""><br>
+<p><img src="/tailrecursion/images/copied_from_nb/gnn_resources/1/neurons.jpg" alt=""><br>
 Drawings of the nervous systen, by <a href="https://en.wikipedia.org/wiki/Santiago_Ram%C3%B3n_y_Cajal">Santiago Ramón y Cajal</a></p>
 
 </div>
@@ -423,7 +423,7 @@ Proteins are long chains of amino acids which quickly fold up into complex struc
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/Myoglobin.png/593px-Myoglobin.png" alt=""><br>
+<p><img src="/tailrecursion/images/copied_from_nb/gnn_resources/1/protein.png" alt=""><br>
 Representation of 3D structure of the protein <a href="https://en.wikipedia.org/wiki/Myoglobin">myoglobin</a></p>
 
 </div>
@@ -506,7 +506,7 @@ Representation of 3D structure of the protein <a href="https://en.wikipedia.org/
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Given a graph or a small subgraph of a larger graph as input, the goal is to classify the graph into a fixed set of categories.<br>
-In <a href="https://www.researchgate.net/publication/221297916_Political_Polarization_on_Twitter">"Political Polarization on Twitter"</a>, M. D. Conover et al. looked at more than 250,000 re-tweets leading up to the 2010 US elections. They were able to prove something we know intuitively: "... politically motivated individuals provoke inter-action by injecting partisan content into information streams whose primary audience consists of ideologically-opposed users." (colloquially, <em>trolling</em>). They compared two networks with high (left) and low (right) polarization. This raises the question: Can a graph ML-based model automatically classify polarizing and non-polarizing networks?</p>
+In <a href="https://www.researchgate.net/publication/221297916_Political_Polarization_on_Twitter">"Political Polarization on Twitter"</a>, M. D. Conover et al. looked at more than 250,000 re-tweets leading up to the 2010 US elections. They were able to prove something we know intuitively: <em>"... politically motivated individuals provoke inter-action by injecting partisan content into information streams whose primary audience consists of ideologically-opposed users."</em> (colloquially, <em>trolling</em>). They compared two networks with high (left) and low (right) polarization. This raises the question: Can a graph ML-based model automatically classify polarizing and non-polarizing networks?</p>
 
 </div>
 </div>
@@ -549,7 +549,7 @@ In <a href="https://www.cs.stanford.edu/~srijan/pubs/hoax-www16.pdf">"Disinforma
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Given an incomplete graph where we only know some of the edges, the goal is to predict whether a given pair of nodes should be connected.<br>
+<p>Given an incomplete graph where we only know some of the edges, we want to predict whether a given pair of nodes should be connected.<br>
 In <a href="https://cs.stanford.edu/~jure/pubs/drugcomb-ismb18.pdf">"Modeling Polypharmacy Side Effects with Graph Convolutional Networks"</a>, Marinka Zitnik et al. used two networks, a protein-protein interaction network, and a drug-interaction network, together with known information about which drugs target which proteins, and performed link prediction. They predicted the unknown side-effects of pairs of drugs. Of their top 10 predictions, 5 have been verified clinically.</p>
 
 </div>
@@ -568,7 +568,7 @@ In <a href="https://cs.stanford.edu/~jure/pubs/drugcomb-ismb18.pdf">"Modeling Po
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Given a complex network, the goal here is to partition the graph into subgraphs which have certain properties.<br>
-In <a href="https://cs.stanford.edu/people/jure/pubs/circles-tkdd14.pdf">"Discovering Social Circles in Ego Networks"</a>, Julian Mcauley and Jure Leskovec used methods in node clustering to automatically detect social circles (friends, colleague, family, etc.) in social networks. Social networking sites today ask users to manually tag each friend with the correct circle.</p>
+Social networking sites today ask users to manually tag each friend with the correct circle. In <a href="https://cs.stanford.edu/people/jure/pubs/circles-tkdd14.pdf">"Discovering Social Circles in Ego Networks"</a>, Julian Mcauley and Jure Leskovec used methods in node clustering to automatically detect social circles (friends, colleague, family, etc.) in social networks.</p>
 
 </div>
 </div>
@@ -585,8 +585,16 @@ In <a href="https://cs.stanford.edu/people/jure/pubs/circles-tkdd14.pdf">"Discov
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Given a graph, the goal is compute the similarity of a pair of nodes. This usually involves mapping each node into a lower-dimensional embedding space and computing the distance between them.<br>
+<p>Given a graph, we want to compute the similarity of a pair of nodes. This usually involves mapping each node into a lower-dimensional embedding space and computing the distance between them.<br>
 In Pinterest and other similar applications, the task is to recommend a user new images based on her profile and images she's liked in the past. Specifically in Pinterest, images are grouped into boards, with one image potentially belonging to multiple boards, and one board containing multiple images. In <a href="https://arxiv.org/pdf/1806.01973.pdf">Graph Convolutional Neural Networks for Web-Scale Recommender Systems</a>, Rex Ying et al. used the graph containing images and boards, to train a graph neural network based recommendation engine. When a user adds an image, the model maps the node corresponding to it into a lower-dimensional embedding space and searches for similar nodes (close in the space).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><img src="/tailrecursion/images/copied_from_nb/gnn_resources/1/embedding.png" alt=""></p>
 
 </div>
 </div>
@@ -603,7 +611,7 @@ In Pinterest and other similar applications, the task is to recommend a user new
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Graph machine learning has given us a new way to formulate problems. It is attempting to model various phenomena in other scientific disciplines and solving real-world problems as well. If you enjoyed this blog, please leave your feedback below. I'll attempt to put into words everything I learn in the course <a href="https://web.stanford.edu/class/cs224w/">(CS224w)</a> and beyond. You can stay updated by subscribing to the RSS feed below.</p>
+<p>Graph machine learning has given us a new way to formulate problems. It is attempting to model various phenomena in other scientific disciplines and solving real-world problems as well. If you enjoyed this blog, please leave your feedback below. I'll attempt to put into words everything I learn in the course <a href="https://web.stanford.edu/class/cs224w/">(CS224w)</a> and beyond. You can stay updated by subscribing to the RSS feed (look for the small orange RSS icon below).</p>
 
 </div>
 </div>
